@@ -19,6 +19,15 @@ public class StandardAttackBehavior : MonoBehaviour {
         }
 	}
 
+    private void OnTriggerEnter(Collider other)
+    {
+        // Can not hit self
+        if (!other.GetComponent<Collider>().CompareTag("Player"))
+        {
+            other.SendMessage("OnPlayerHit");
+        }
+    }
+
     private void DisableWeaponHitbox()
     {
         this.hitBox.SetActive(false);
