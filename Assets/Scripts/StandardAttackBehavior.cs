@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class StandardAttackBehavior : MonoBehaviour {
 
-    public GameObject hitBox;
+    public BoxCollider hitBox;
     public float attackSustainTime = 0.25f;
 
 	void Start () {
-        hitBox.SetActive(false);
+        hitBox.enabled = false;
 	}
 	
 	void Update () {
         if (Input.GetButtonDown("Fire1"))
         {
-            hitBox.SetActive(true);
+            hitBox.enabled = true;
             Invoke("DisableWeaponHitbox", attackSustainTime);
         }
 	}
@@ -24,12 +24,12 @@ public class StandardAttackBehavior : MonoBehaviour {
         // Can not hit self
         if (!other.GetComponent<Collider>().CompareTag("Player"))
         {
-            other.SendMessage("OnPlayerHit");
+            other.SendMessage("OnPlayerHit", SendMessageOptions.DontRequireReceiver);
         }
     }
 
     private void DisableWeaponHitbox()
     {
-        this.hitBox.SetActive(false);
+        hitBox.enabled = false;
     }
 }
