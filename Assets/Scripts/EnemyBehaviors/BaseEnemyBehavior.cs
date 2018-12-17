@@ -30,6 +30,7 @@ public class BaseEnemyBehavior : MonoBehaviour {
         }
     }
 
+    // When I lose enough health, kill me
     void Die()
     {
         Destroy(gameObject);
