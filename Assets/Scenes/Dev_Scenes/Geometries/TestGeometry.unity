@@ -39612,6 +39612,7 @@ GameObject:
   - component: {fileID: 812458346}
   - component: {fileID: 812458348}
   - component: {fileID: 812458347}
+  - component: {fileID: 812458349}
   m_Layer: 0
   m_Name: Donut.001
   m_TagString: Untagged
@@ -39677,6 +39678,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 812458345}
   m_Mesh: {fileID: 4300000, guid: 51d24e579bc19924c82b41f3711fa722, type: 3}
+--- !u!65 &812458349
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 812458345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0029849294, y: 0.0029849303, z: 0.0009964582}
+  m_Center: {x: 8.731149e-10, y: 5.820767e-11, z: -0.000000007450581}
 --- !u!1 &815515132
 GameObject:
   m_ObjectHideFlags: 0
@@ -46274,6 +46287,7 @@ GameObject:
   - component: {fileID: 960491607}
   - component: {fileID: 960491609}
   - component: {fileID: 960491608}
+  - component: {fileID: 960491610}
   m_Layer: 0
   m_Name: Plate
   m_TagString: Untagged
@@ -46339,6 +46353,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 960491606}
   m_Mesh: {fileID: 4300016, guid: 51d24e579bc19924c82b41f3711fa722, type: 3}
+--- !u!65 &960491610
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 960491606}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.006471853, y: 0.006471851, z: 0.00014182062}
+  m_Center: {x: -0.0000000038417056, y: 0, z: -0.0029006877}
 --- !u!1 &963032462
 GameObject:
   m_ObjectHideFlags: 0
@@ -47099,6 +47125,47 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 976258258}
   m_Mesh: {fileID: 4300014, guid: 51d24e579bc19924c82b41f3711fa722, type: 3}
+--- !u!1 &977566189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 977566191}
+  - component: {fileID: 977566190}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &977566190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 977566189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7292eb1f754575f4f88970a479fe184f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Paused: 0
+--- !u!4 &977566191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 977566189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.8187609, y: 1.2101095, z: -11.923342}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &979006875
 GameObject:
   m_ObjectHideFlags: 0
@@ -89202,6 +89269,7 @@ GameObject:
   - component: {fileID: 1797475642}
   - component: {fileID: 1797475644}
   - component: {fileID: 1797475643}
+  - component: {fileID: 1797475645}
   m_Layer: 0
   m_Name: Donut
   m_TagString: Untagged
@@ -89267,6 +89335,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1797475641}
   m_Mesh: {fileID: 4300022, guid: 51d24e579bc19924c82b41f3711fa722, type: 3}
+--- !u!65 &1797475645
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1797475641}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0029849298, y: 0.0029849294, z: 0.0009964581}
+  m_Center: {x: -0.000000003783498, y: -0.0000000148429535, z: 0}
 --- !u!1 &1797690675
 GameObject:
   m_ObjectHideFlags: 0
