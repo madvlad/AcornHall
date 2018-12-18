@@ -9,6 +9,7 @@ using UnityEngine.AI;
 public class SlimeBehavior : BaseEnemyBehavior {
     public Transform playerTransform;
     public Transform home;
+    public int SlimeStartHealth = 3;
 
     private NavMeshAgent agent;
     private float defaultSpeed;
@@ -18,6 +19,7 @@ public class SlimeBehavior : BaseEnemyBehavior {
     {
         agent = GetComponent<NavMeshAgent>();
         defaultSpeed = agent.speed;
+        CurrentHealth = SlimeStartHealth;
     }
 
     void Update()
@@ -58,11 +60,12 @@ public class SlimeBehavior : BaseEnemyBehavior {
         }
     }
 
-    void OnPlayerHit()
+    new void OnPlayerHit()
     {
         // The player hit us? I'm a coward and am going to run home!
         goingHome = true;
         agent.speed *= 2;
         agent.SetDestination(home.position);
+        base.OnPlayerHit();
     }
 }

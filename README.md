@@ -12,3 +12,7 @@ The prototype will be declared when the following features are complete
 - Test geometry temple is completed
 - First version of Inventory system is completed
 - One pickup item is completed
+
+# Development Information
+
+Log : https://swimleaks.neocities.org/logs/

@@ -7,8 +7,10 @@ using UnityEngine;
 /// </summary>
 public class BaseEnemyBehavior : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public int CurrentHealth;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -17,8 +19,20 @@ public class BaseEnemyBehavior : MonoBehaviour {
 		
 	}
 
-    void OnPlayerHit()
+    // All enemies lose health on hit
+    public void OnPlayerHit()
     {
-        Debug.Log("Enemy hit");
+        CurrentHealth--;
+
+        if (CurrentHealth == 0)
+        {
+            Die();
+        }
+    }
+
+    // When I lose enough health, kill me
+    void Die()
+    {
+        Destroy(gameObject);
     }
 }
