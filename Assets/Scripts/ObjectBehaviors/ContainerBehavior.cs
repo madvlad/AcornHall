@@ -3,16 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ContainerBehavior : MonoBehaviour {
-    public GameObject contents;
+    public BaseItem contents;
 
     private bool isOpen = false;
+    private PlayerInventoryManager inventoryManager;
 
-	void OnPlayerUse()
+    private void Start()
+    {
+        inventoryManager = GameObject.FindGameObjectWithTag("Managers").GetComponent<PlayerInventoryManager>();
+    }
+
+    void OnPlayerUse()
     {
         if (!isOpen)
         {
             isOpen = true;
-            Debug.Log("Got " + contents.name);
+            inventoryManager.AddItem(contents);
         }
     }
 }
