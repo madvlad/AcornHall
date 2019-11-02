@@ -15,4 +15,4 @@ The prototype will be declared when the following features are complete
 
 # Development Information
 
-Log : https://swimleaks.neocities.org/logs/
+Log : https://swimleaks.neocities.org/logs/ 
